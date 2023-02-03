@@ -17,12 +17,12 @@ const PasswordGenerator = () => {
           type="text"
           value={inputValue}
           onChange={e => setInputValue(e.target.value)}
-          placeholder="Enter prefix"
+          placeholder="Enter password for suggestion"
           className="input"
         />
         <button onClick={generatePassword} className="button">Generate Password</button>
       </div>
-      <p className="password">Password: {password}</p>
+      <p className="password">Suggested Password: {password}</p>
     </div>
   );
 };
